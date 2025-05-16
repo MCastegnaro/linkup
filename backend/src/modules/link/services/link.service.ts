@@ -21,7 +21,6 @@ export class LinkService {
   ) {}
 
   async create(link: CreateLinkDto): Promise<LinkDto> {
-    console.log({ link });
     const userFound = await this.usersRepository.findOne({
       where: { id: link.userId },
     });
