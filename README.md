@@ -56,6 +56,10 @@ Before starting, make sure the project has already been cloned and the API and d
 2. Configure the .env, there is a `.env.example` with the necessary variables.
 3. Run your application using the `npm run dev` command.
 
+```
+Attention!! Remember that within each project there is a readme with detailed instructions about each project.
+```
+
 ## Project Structure front
 
 ```bash
