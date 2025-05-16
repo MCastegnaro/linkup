@@ -19,12 +19,18 @@ export function middleware(request: NextRequest) {
   }
 
   if (isAuthenticated && isPublicRoute) {
-    return NextResponse.redirect(new URL("/tasks", request.url));
+    return NextResponse.redirect(new URL("/link-management", request.url));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/", "/tasks", "/login", "/register"],
+  matcher: [
+    "/",
+    "/link-management",
+    "/login",
+    "/register",
+    "/profile/[:username]",
+  ],
 };

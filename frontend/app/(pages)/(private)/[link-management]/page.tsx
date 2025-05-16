@@ -102,21 +102,13 @@ export default function LinkManagementPage() {
         <span className="font-black text-2xl">LinkifyMe</span>
         <nav className="flex gap-6">
           <Link
-            href={"/register"}
+            href={`/profile/${user?.username}`}
+            target="blank"
             className="hover:text-orange-400 hover:underline "
           >
             Landing page
           </Link>
-          <Link
-            href={"/register"}
-            className=" hover:text-orange-400  hover:underline "
-          >
-            Link Management
-          </Link>
-          <Link
-            href={"/register"}
-            className=" hover:text-orange-400 hover:underline"
-          >
+          <Link href={"/#"} className=" hover:text-orange-400 hover:underline">
             Settings
           </Link>
         </nav>
