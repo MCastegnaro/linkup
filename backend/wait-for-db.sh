@@ -1,14 +1,13 @@
 #!/bin/sh
 
-# Espera o banco responder na porta 5432
-echo "Aguardando o banco de dados ficar pronto..."
+echo "Waiting for the database to be ready..."
 
 until nc -z pgsql 5432; do
   sleep 1
 done
 
-echo "Banco de dados está pronto. Rodando migrações..."
+echo "Database is ready. Running migrations..."
 npm run migration:run
 
-echo "Iniciando aplicação..."
+echo "Starting application..."
 npm run start:prod
