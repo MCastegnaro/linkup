@@ -2,6 +2,8 @@
 
 This project is a fullstack application built with **Next.js** and **NestJS** that implements a link management system with secure authentication and routing. Users can create and share links in public profile like linktree platform. The application uses **Context API**, **Tailwind CSS**, **Express.js**, **TypeORM**, and **React Feather Icons**.
 
+![alt text](./frontend/public/assets/logo.png)
+
 ## Features
 
 - 🔐 User authentication
